@@ -1,23 +1,27 @@
-import Nav from "../components/nav"
+import Navbar from "../components/Navbar"
+import Hero from "../components/Hero"
+import TechStack from "../components/TechStack"
+import AboutUs from "../components/AboutUs"
+import Portfolio from "../components/Portfolio"
+import Pricing from "../components/Pricing"
+import Contact from "../components/Contact"
+import Footer from "../components/Footer"
+import WhatsAppButton from "../components/WhatsAppButton"
+
 const Home = () => {
-    return <div className="container">
-        <div className="row">
-            <div className="col-12">
-                <Nav />
-                <h1 className="principal-h1">
-                    Impulsa tu Negocio con
-                    Aplicaciones Web Modernas
-                </h1>
-                <p className="main-paragraph">
-                    Creamos tu sitio web en tiempo record y al
-                    costo mas accesible del mercado
-                </p>
-                <div className="text-center mt-5">
-                    <button> Conoce nuestros planes premium </button>
-                </div>
-            </div>
+    return (
+        <div className="main-wrapper">
+            <Navbar />
+            <Hero />
+            <TechStack />
+            <AboutUs />
+            <Portfolio />
+            <Pricing />
+            <Contact />
+            <Footer />
+            <WhatsAppButton />
         </div>
-    </div>
+    )
 }
 
 export default Home
