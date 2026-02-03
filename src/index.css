@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'momo';
+  src: url('./fonts/momo.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --dark-blue: rgb(8, 4, 54);
+  --medium-blue: rgb(8, 20, 120);
+  --ligh-blue:rgb(blue);
+  --orange-1: rgb(254,185,95);
+}
+
+.main {
+  background-color: aqua;
+  min-height: 100vh;
+  background: linear-gradient(90deg, var(--dark-blue), var(--medium-blue), var(--dark-blue));
+  color: aliceblue;
+  font-weight: 400;
+}
+
+.logo {
+   font-family: 'moom', sans-serif;
+  font-size: 35px;
+}
+
+.text-logo-1 {}
+
+.text-logo-2 {
+  color: var(--orange-1);
+}
+
+.nav {
+  height: 160px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-buttons ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  align-items: center;
+}
+
+button {
+  background-color: var(--orange-1);
+  border: none;
+  height: 35px;
+  border-radius: 3px !important;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.principal-h1{
+  text-align: center;
+  font-size: 70px;
+  font-family: 'momo';
+}
+
+.main-paragraph{
+  font-size: 20px;
+  text-align: center;
+  color: var(--ligh-blue);
+  margin-top: 30px;
+}
