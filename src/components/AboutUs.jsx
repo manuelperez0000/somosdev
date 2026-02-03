@@ -84,8 +84,7 @@ const AboutUs = () => {
                   <img 
                     src={member.image} 
                     alt={member.name} 
-                    className="rounded-circle shadow border border-4 border-white"
-                    style={{ width: '160px', height: '160px', objectFit: 'cover' }}
+                    className="rounded-circle shadow border border-4 border-white team-img"
                   />
                   <div className="position-absolute bottom-0 end-0 bg-primary rounded-circle p-2 shadow-sm border border-3 border-white">
                     <i className="bi bi-star-fill text-white small"></i>

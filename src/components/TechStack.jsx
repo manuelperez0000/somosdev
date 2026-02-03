@@ -18,12 +18,12 @@ const TechStack = () => {
         <div className="text-center mb-4">
           <p className="text-muted text-uppercase fw-bold ls-1 small">Tecnologías que dominamos</p>
         </div>
-        <div className="row justify-content-center align-items-center g-4 text-center">
+        <div className="row justify-content-center align-items-center g-3 g-md-4 text-center">
           {technologies.map((tech, index) => (
-            <div className="col-6 col-md-3 col-lg-auto px-4" key={index}>
+            <div className="col-4 col-md-3 col-lg-auto px-2 px-md-4" key={index}>
               <div className="d-flex flex-column align-items-center grayscale-hover transition-all">
-                <i className={`${tech.icon} display-4 mb-2`}></i>
-                <span className="small fw-semibold text-muted">{tech.name}</span>
+                <i className={`${tech.icon} fs-1 mb-2`}></i>
+                <span className="small fw-semibold text-muted" style={{fontSize: '0.75rem'}}>{tech.name}</span>
               </div>
             </div>
           ))}

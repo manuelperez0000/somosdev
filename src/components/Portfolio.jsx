@@ -48,26 +48,25 @@ const Portfolio = () => {
             <div className="col-12" key={index}>
               <div className="card card-custom overflow-hidden border-0 shadow-sm bg-white">
                 <div className="row g-0 align-items-center">
-                  <div className="col-7">
+                  <div className="col-lg-7">
                     <img 
                       src={project.image} 
-                      className="img-fluid w-100" 
+                      className="img-fluid w-100 portfolio-img" 
                       alt={project.title} 
-                      style={{height: '400px', objectFit: 'cover'}} 
                     />
                   </div>
-                  <div className="col-5">
-                    <div className="card-body p-4 p-lg-5">
+                  <div className="col-lg-5">
+                    <div className="card-body p-4 p-lg-5 text-center text-lg-start">
                       <h3 className="fw-bold mb-3">{project.title}</h3>
                       <p className="card-text text-muted lead mb-4" style={{fontSize: '1.1rem'}}>
                         {project.description}
                       </p>
-                      <div className="d-flex align-items-center gap-3">
+                      <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start gap-3">
                         <a 
                           href={project.website} 
                           target="_blank" 
                           rel="noopener noreferrer" 
-                          className="btn btn-primary-custom px-4"
+                          className="btn btn-primary-custom px-4 w-100 w-sm-auto"
                         >
                           Ver Proyecto <i className="bi bi-arrow-right ms-2"></i>
                         </a>
@@ -75,7 +74,7 @@ const Portfolio = () => {
                           href={project.github} 
                           target="_blank" 
                           rel="noopener noreferrer" 
-                          className="text-muted text-decoration-none fw-semibold"
+                          className="text-muted text-decoration-none fw-semibold w-100 w-sm-auto mt-2 mt-sm-0"
                         >
                           GitHub <i className="bi bi-github ms-1"></i>
                         </a>

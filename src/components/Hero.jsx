@@ -13,9 +13,9 @@ const Hero = () => {
               Transformamos la visión de tu negocio en soluciones digitales de alto impacto. 
               Desarrollamos software a medida que escala con tus ambiciones.
             </p>
-            <div className="d-flex justify-content-center gap-3">
-              <a href="#contact" className="btn btn-primary-custom btn-lg">Empezar ahora</a>
-              <a href="#portfolio" className="btn btn-outline-dark btn-lg px-4" style={{borderRadius: '8px', fontWeight: '600'}}>Ver proyectos</a>
+            <div className="d-flex flex-column flex-sm-row justify-content-center gap-3">
+              <a href="#contact" className="btn btn-primary-custom btn-lg w-100 w-sm-auto">Empezar ahora</a>
+              <a href="#portfolio" className="btn btn-outline-dark btn-lg px-4 w-100 w-sm-auto" style={{borderRadius: '8px', fontWeight: '600'}}>Ver proyectos</a>
             </div>
           </div>
         </div>

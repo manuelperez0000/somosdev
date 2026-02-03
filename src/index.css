@@ -27,6 +27,12 @@ body {
   font-weight: 400;
 }
 
+@media (max-width: 768px) {
+  .lead {
+    font-size: 1.1rem;
+  }
+}
+
 .form-control:focus {
   box-shadow: 0 0 0 0.25rem rgba(37, 99, 235, 0.1);
   border-color: var(--primary-color);
@@ -37,11 +43,59 @@ body {
   padding: 80px 0;
 }
 
+@media (max-width: 991px) {
+  .section-padding {
+    padding: 70px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-padding {
+    padding: 40px 0;
+  }
+  
+  .display-5 {
+    font-size: 2rem !important;
+  }
+  
+  .display-6 {
+    font-size: 1.75rem !important;
+  }
+  
+  .display-4 {
+    font-size: 2.5rem !important;
+  }
+}
+
 .hero-title {
   font-weight: 800;
   font-size: 3.5rem;
   line-height: 1.2;
   margin-bottom: 1.5rem;
+}
+
+@media (max-width: 991px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 2rem;
+  }
 }
 
 .btn-primary-custom {
@@ -92,12 +146,63 @@ body {
   transform: scale(1.15);
 }
 
-.ls-1 {
-  letter-spacing: 0.1rem;
+.portfolio-img {
+  min-height: 300px;
+  height: 100%;
+  max-height: 450px;
+  object-fit: cover;
 }
 
+@media (max-width: 991px) {
+  .portfolio-img {
+    min-height: 250px;
+    max-height: 350px;
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio-img {
+    min-height: 200px;
+    max-height: 300px;
+  }
+}
+
+.team-img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+}
+
+@media (max-width: 576px) {
+  .team-img {
+    width: 130px;
+    height: 130px;
+  }
+}
 .transition-all {
   transition: all 0.3s ease;
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .nav-item {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .nav-item.d-flex {
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+
+.ls-1 {
+  letter-spacing: 0.1rem;
 }
 
 .whatsapp-float {
@@ -118,6 +223,16 @@ body {
   justify-content: center;
   text-decoration: none;
   transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    font-size: 25px;
+  }
 }
 
 .whatsapp-float:hover {
