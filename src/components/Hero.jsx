@@ -7,11 +7,11 @@ const Hero = () => {
         <div className="row align-items-center">
           <div className="col-lg-8 mx-auto text-center">
             <h1 className="hero-title">
-              Automatizamos y Mejoramos tus <span style={{color: 'var(--primary-color)'}}>Procesos Empresariales</span> con Tecnología de Punta
+              Convertimos tus Desafíos de Negocio en <span style={{color: 'var(--primary-color)'}}>Soluciones Digitales</span> Rentables
             </h1>
             <p className="lead text-muted mb-5">
-              Transformamos la visión de tu negocio en soluciones digitales de alto impacto. 
-              Desarrollamos software a medida que escala con tus ambiciones.
+              En SomosDev, no solo escribimos código; construimos el motor tecnológico que impulsa tu crecimiento. 
+              Soluciones a medida diseñadas para generar confianza, eficiencia y resultados reales.
             </p>
             <div className="d-flex flex-column flex-sm-row justify-content-center gap-3">
               <a href="#contact" className="btn btn-primary-custom btn-lg w-100 w-sm-auto">Empezar ahora</a>

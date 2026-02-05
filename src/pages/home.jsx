@@ -1,25 +1,32 @@
+import React, { Suspense, lazy } from 'react';
 import Navbar from "../components/Navbar"
 import Hero from "../components/Hero"
-import TechStack from "../components/TechStack"
-import AboutUs from "../components/AboutUs"
-import Portfolio from "../components/Portfolio"
-import Pricing from "../components/Pricing"
-import Contact from "../components/Contact"
-import Footer from "../components/Footer"
-import WhatsAppButton from "../components/WhatsAppButton"
+import SEO from "../components/SEO"
+
+// Lazy load non-critical components
+const TechStack = lazy(() => import("../components/TechStack"));
+const AboutUs = lazy(() => import("../components/AboutUs"));
+const Portfolio = lazy(() => import("../components/Portfolio"));
+const Pricing = lazy(() => import("../components/Pricing"));
+const Contact = lazy(() => import("../components/Contact"));
+const Footer = lazy(() => import("../components/Footer"));
+const WhatsAppButton = lazy(() => import("../components/WhatsAppButton"));
 
 const Home = () => {
     return (
         <div className="main-wrapper">
+            <SEO />
             <Navbar />
             <Hero />
-            <TechStack />
-            <AboutUs />
-            <Portfolio />
-            <Pricing />
-            <Contact />
-            <Footer />
-            <WhatsAppButton />
+            <Suspense fallback={<div className="py-5 text-center"><div className="spinner-border text-primary" role="status"><span className="visually-hidden">Cargando...</span></div></div>}>
+                <TechStack />
+                <AboutUs />
+                <Portfolio />
+                <Pricing />
+                <Contact />
+                <Footer />
+                <WhatsAppButton />
+            </Suspense>
         </div>
     )
 }
