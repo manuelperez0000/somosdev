@@ -70,14 +70,7 @@ const Portfolio = () => {
                         >
                           Ver Proyecto <i className="bi bi-arrow-right ms-2"></i>
                         </a>
-                        <a 
-                          href={project.github} 
-                          target="_blank" 
-                          rel="noopener noreferrer" 
-                          className="text-muted text-decoration-none fw-semibold w-100 w-sm-auto mt-2 mt-sm-0"
-                        >
-                          GitHub <i className="bi bi-github ms-1"></i>
-                        </a>
+                        
                       </div>
                     </div>
                   </div>
