@@ -30,28 +30,36 @@ const Pricing = () => {
   };
 
   return (
-    <section id="pricing" className="section-padding bg-light">
+    <section id="pricing" className="section-padding" style={{ backgroundColor: '#f9fafb' }}>
       <div className="container">
         <div className="text-center mb-5">
-          <h2 className="display-5 fw-bold">Planes y Precios</h2>
-          <p className="text-muted lead">Inversiones adaptadas a cada etapa de tu negocio</p>
+          <h2 className="display-4 fw-bold mb-3">Planes y Precios</h2>
+          <p className="lead text-muted mx-auto" style={{ maxWidth: '600px' }}>Inversiones transparentes diseñadas para escalar tu presencia digital</p>
         </div>
-        <div className="row g-4 justify-content-center">
+        <div className="row g-4 justify-content-center align-items-stretch">
           {/* Plan Básico */}
-          <div className="col-lg-4 col-md-6">
-            <div className="pricing-card h-100 bg-white">
-              <h3 className="h5 fw-bold mb-3">Plan Básico</h3>
-              <div className="display-4 fw-bold mb-3">$70</div>
-              <ul className="list-unstyled mb-4 text-muted">
-                <li className="mb-2"><i className="bi bi-check text-primary me-2"></i>Landing Page Profesional</li>
-                <li className="mb-2"><i className="bi bi-check text-primary me-2"></i>Máximo de 3 páginas</li>
-                <li className="mb-2"><i className="bi bi-x text-danger me-2"></i>Sin base de datos</li>
-                <li className="mb-2"><i className="bi bi-check text-primary me-2"></i>Dominio incluido (1 año)</li>
-                <li className="mb-2"><i className="bi bi-check text-primary me-2"></i>Servidor incluido (1 año)</li>
+          <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <div className="pricing-card h-100 shadow-sm">
+              <div className="mb-4">
+                <h3 className="h4 fw-bold text-dark">Plan Básico</h3>
+                <p className="text-muted small">Ideal para marcas personales o nuevos negocios</p>
+              </div>
+              <div className="mb-4">
+                <span className="price-currency text-primary">$</span>
+                <span className="price-value">70</span>
+                <span className="text-muted">/proyecto</span>
+              </div>
+              <ul className="list-unstyled mb-5 pricing-features">
+                <li><i className="bi bi-check-circle-fill text-primary me-3"></i>Landing Page Profesional</li>
+                <li><i className="bi bi-check-circle-fill text-primary me-3"></i>Máximo de 3 páginas</li>
+                <li><i className="bi bi-check-circle-fill text-primary me-3"></i>Diseño Responsive (Móvil)</li>
+                <li><i className="bi bi-check-circle-fill text-primary me-3"></i>Dominio gratis (1 año)</li>
+                <li><i className="bi bi-check-circle-fill text-primary me-3"></i>Hosting incluido (1 año)</li>
+                <li className="text-muted opacity-50"><i className="bi bi-x-circle me-3"></i>Sin Base de Datos</li>
               </ul>
               <button 
-                className="btn btn-outline-primary w-100 py-3 fw-bold" 
-                style={{borderRadius: '10px'}}
+                className="btn btn-outline-primary w-100 py-3 fw-bold mt-auto" 
+                style={{ borderRadius: '12px' }}
                 data-bs-toggle="modal"
                 data-bs-target="#pricingModal"
                 onClick={() => handlePlanClick('Plan Básico')}
@@ -62,49 +70,64 @@ const Pricing = () => {
           </div>
           
           {/* Plan Emprendedor */}
-          <div className="col-lg-4 col-md-6">
-            <div className="pricing-card featured h-100 bg-white shadow-sm">
-              <div className="badge bg-primary mb-3">Más Popular</div>
-              <h3 className="h5 fw-bold mb-3">Plan Emprendedor</h3>
-              <div className="display-4 fw-bold mb-3">$230</div>
-              <ul className="list-unstyled mb-4 text-muted">
-                <li className="mb-2"><i className="bi bi-check text-primary me-2"></i>Todo el Plan Básico</li>
-                <li className="mb-2"><i className="bi bi-check text-primary me-2"></i>Máximo de 10 páginas</li>
-                <li className="mb-2"><i className="bi bi-check text-primary me-2"></i>Incluye Base de Datos</li>
-                <li className="mb-2"><i className="bi bi-check text-primary me-2"></i>5 Correos Personalizados</li>
-                <li className="mb-2"><i className="bi bi-check text-primary me-2"></i>Soporte prioritario</li>
+          <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <div className="pricing-card featured h-100">
+              <div className="popular-badge">Más Popular</div>
+              <div className="mb-4">
+                <h3 className="h4 fw-bold text-dark">Plan Emprendedor</h3>
+                <p className="text-muted small">Potencia tu negocio con funcionalidades avanzadas</p>
+              </div>
+              <div className="mb-4">
+                <span className="price-currency text-primary">$</span>
+                <span className="price-value">230</span>
+                <span className="text-muted">/proyecto</span>
+              </div>
+              <ul className="list-unstyled mb-5 pricing-features">
+                <li><i className="bi bi-check-circle-fill text-primary me-3"></i>Todo el Plan Básico</li>
+                <li><i className="bi bi-check-circle-fill text-primary me-3"></i>Máximo de 10 páginas</li>
+                <li><i className="bi bi-check-circle-fill text-primary me-3"></i>Base de Datos Integrada</li>
+                <li><i className="bi bi-check-circle-fill text-primary me-3"></i>5 Correos Corporativos</li>
+                <li><i className="bi bi-check-circle-fill text-primary me-3"></i>Panel de Administración</li>
+                <li><i className="bi bi-check-circle-fill text-primary me-3"></i>Soporte Prioritario</li>
               </ul>
               <button 
-                className="btn btn-primary w-100 py-3 fw-bold shadow-sm"
-                style={{ borderRadius: '10px' }}
+                className="btn btn-primary w-100 py-3 fw-bold mt-auto shadow-sm"
+                style={{ borderRadius: '12px' }}
                 data-bs-toggle="modal"
                 data-bs-target="#pricingModal"
                 onClick={() => handlePlanClick('Plan Emprendedor')}
               >
-                Elegir Plan
+                Empezar Ahora
               </button>
             </div>
           </div>
 
           {/* Plan Empresarial */}
-          <div className="col-lg-4 col-md-6">
-            <div className="pricing-card h-100 bg-white">
-              <h3 className="h5 fw-bold mb-3">Plan Empresarial</h3>
-              <div className="h4 fw-bold mb-4">Bajo Requerimientos</div>
-              <ul className="list-unstyled mb-4 text-muted">
-                <li className="mb-2"><i className="bi bi-check text-primary me-2"></i>Aplicaciones Completas</li>
-                <li className="mb-2"><i className="bi bi-check text-primary me-2"></i>Más de 10 páginas</li>
-                <li className="mb-2"><i className="bi bi-check text-primary me-2"></i>Panel Administrativo</li>
-                <li className="mb-2"><i className="bi bi-check text-primary me-2"></i>Base de Datos Avanzada</li>
+          <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <div className="pricing-card h-100 shadow-sm">
+              <div className="mb-4">
+                <h3 className="h4 fw-bold text-dark">Plan Empresarial</h3>
+                <p className="text-muted small">Sistemas a medida para grandes requerimientos</p>
+              </div>
+              <div className="mb-4">
+                <div className="h3 fw-bold text-primary mb-1">Personalizado</div>
+                <p className="text-muted small">Bajo requerimientos</p>
+              </div>
+              <ul className="list-unstyled mb-5 pricing-features">
+                <li><i className="bi bi-check-circle-fill text-primary me-3"></i>Aplicaciones Web Completas</li>
+                <li><i className="bi bi-check-circle-fill text-primary me-3"></i>Páginas Ilimitadas</li>
+                <li><i className="bi bi-check-circle-fill text-primary me-3"></i>Infraestructura Escalable</li>
+                <li><i className="bi bi-check-circle-fill text-primary me-3"></i>Seguridad de Grado Bancario</li>
+                <li><i className="bi bi-check-circle-fill text-primary me-3"></i>Mantenimiento Mensual</li>
               </ul>
               <button 
-                className="btn btn-outline-primary w-100 py-3 fw-bold" 
-                style={{borderRadius: '10px'}}
+                className="btn btn-outline-primary w-100 py-3 fw-bold mt-auto" 
+                style={{ borderRadius: '12px' }}
                 data-bs-toggle="modal"
                 data-bs-target="#pricingModal"
                 onClick={() => handlePlanClick('Plan Empresarial')}
               >
-                Contactar
+                Contactar Ventas
               </button>
             </div>
           </div>

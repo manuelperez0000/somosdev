@@ -85,6 +85,10 @@ const AboutUs = () => {
                     src={member.image} 
                     alt={member.name} 
                     className="rounded-circle shadow border border-4 border-white team-img"
+                    loading="lazy"
+                    decoding="async"
+                    width="150"
+                    height="150"
                   />
                   <div className="position-absolute bottom-0 end-0 bg-primary rounded-circle p-2 shadow-sm border border-3 border-white">
                     <i className="bi bi-star-fill text-white small"></i>
