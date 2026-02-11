@@ -73,6 +73,42 @@ body {
   }
 }
 
+.hero-section {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-alt);
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.video-content {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(5, 16, 39, 0.411), rgba(7, 20, 48, 0.651));
+  z-index: 1;
+}
+
+.z-1 {
+  z-index: 2;
+}
+
 .hero-title {
   font-weight: 800;
   font-size: 3.5rem;
