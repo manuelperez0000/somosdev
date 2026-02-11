@@ -22,7 +22,7 @@ const Hero = () => {
             <h1 className="hero-title">
               Convertimos tus Desafíos de Negocio en <span style={{color: 'var(--primary-color)'}}>Soluciones Digitales</span> Rentables
             </h1>
-            <p className="lead text-muted mb-5">
+            <p className="lead text-white mb-5">
               En SomosDev, no solo escribimos código; construimos el motor tecnológico que impulsa tu crecimiento. 
               Soluciones a medida diseñadas para generar confianza, eficiencia y resultados reales.
             </p>
